@@ -32,6 +32,7 @@ public class CustomerServiceTest {
     public void getCustomerTest()throws Exception{
         long id = 1;
         Customer customer = customerService.getCustomer(id);
+        System.out.println(customer.toString());
         Assert.assertNotNull(customer);
     }
     @Test
