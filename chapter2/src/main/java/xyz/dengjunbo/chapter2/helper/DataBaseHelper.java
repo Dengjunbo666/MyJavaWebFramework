@@ -10,6 +10,9 @@ import org.slf4j.LoggerFactory;
 import xyz.dengjunbo.chapter2.util.CollectionUtil;
 import xyz.dengjunbo.chapter2.util.PropsUtil;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -133,7 +136,7 @@ public final class DataBaseHelper {
             LOGGER.error("can not update entity:fieldMap is empty");
             return false;
         }
-        String sql = "UPDATE "+getTableName(entityClass)+" SET";
+        String sql = "UPDATE "+getTableName(entityClass)+" SET ";
         StringBuilder columns = new StringBuilder();
         for(String fieldName : fieldMap.keySet()){
             columns.append(fieldName).append("=?, ");
@@ -150,7 +153,7 @@ public final class DataBaseHelper {
      *删除实体
      */
     public static <T> boolean deleteEntity(Class<T> entityClass,long id){
-        String sql = "DELETE FORM "+getTableName(entityClass)+" WHERE id = ?";
+        String sql = "DELETE FROM "+getTableName(entityClass)+" WHERE id = ?";
         return executeUpdate(sql,id)==1;
     }
     private static  String getTableName(Class<?> entityClass) {
@@ -184,5 +187,21 @@ public final class DataBaseHelper {
             throw new RuntimeException(e);
         }
         return rows;
+    }
+    /**
+     * 执行sql文件
+     */
+    public static void executeSqlFile(String filePath){
+        InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try {
+            String sql;
+            while ((sql=reader.readLine()) != null){
+                executeUpdate(sql);
+            }
+        }catch (Exception e){
+            LOGGER.error("execute sql file failure",e);
+            throw new RuntimeException(e);
+        }
     }
 }
