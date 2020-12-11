@@ -1,39 +1,34 @@
-# WebFramework
+## 为光的java web框架
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+### 关于本项目
 
-#### 软件架构
-软件架构说明
+本项目是仿SSM框架的一个轻量级java web框架。
 
+基于传统的Servlet+JSP实现，项目实现了类加载器，Bean容器，ioc与aop。
 
-#### 安装教程
+所涉及的功能其实都是spring与springMVC框架核心功能的简化版。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+可以用来巩固java web相关知识，并以此了解spring，springMVC框架实现原理和运行流程。
 
-#### 使用说明
+原项目和教程来自黄勇老师所著的《架构探险-从零开始写Java web框架》。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+预计实现的功能与当前进度：
 
-#### 参与贡献
+- [x] 第一章：搭建一个简单的web应用
+- [x] 第二章：为web应用添加业务功能，实现简单的crud。让该web应用实现以下功能：
+  - [x] MVC分层
+  - [x] 单元测试
+  - [x] 日志打印功能
+  - [x] properties文件数据的读取
+  - [x] 优化原有的JDBC的代码，使用连接池将原来暴露在外的连接封装起来，并向外提供对数据库增删改查的静态方法。
+- [ ] 第三章：搭建轻量级的java web框架
+- [ ] 第四章：使框架具备AOP特性以及事务管理
+- [ ] 第五章：框架优化与功能扩展
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+### 联系我
 
+我的个人博客：https://www.dengjunbo.xyz/
 
-#### 特技
+wx：dengjunbo666
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+qq：1056233814
