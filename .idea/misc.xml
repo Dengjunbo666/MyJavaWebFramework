@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/chapter3" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -8,6 +11,7 @@
       <list>
         <option value="$PROJECT_DIR$/chapter1/pom.xml" />
         <option value="$PROJECT_DIR$/chapter2/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter3/pom.xml" />
       </list>
     </option>
   </component>

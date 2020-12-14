@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chapter1/chapter1.iml" filepath="$PROJECT_DIR$/chapter1/chapter1.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/chapter3/chapter3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-framework/smart-framework.iml" filepath="$PROJECT_DIR$/smart-framework/smart-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/web-framework.iml" filepath="$PROJECT_DIR$/.idea/web-framework.iml" />
     </modules>
   </component>
