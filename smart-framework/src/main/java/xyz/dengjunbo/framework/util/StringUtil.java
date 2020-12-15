@@ -21,4 +21,13 @@ public final class StringUtil {
     public static boolean isNotEmpty(String str){
         return !isEmpty(str);
     }
+
+    public static String[] splitString(String string, String s) {
+        String []strings;
+        if (".".equals(s)||"|".equals(s)){
+            s = "\\\\"+s;
+        }
+        strings = string.split(s);
+        return strings;
+    }
 }
