@@ -31,7 +31,7 @@ static {
                         Class<?>beanFieldClass = beanField.getType();
                         Object beanFieldInstance = beanMap.get(beanFieldClass);
                         if (beanFieldInstance != null){
-                            //通过反射初始化BeanField的值
+                            //通过反射初始化BeanField的值（依赖注入）
                             ReflectionUtil.setField(beanInstance,beanField,beanFieldInstance);
                         }
                     }

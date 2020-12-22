@@ -16,7 +16,7 @@
       <module name="chapter1" target="1.8" />
       <module name="chapter2" target="1.8" />
       <module name="chapter3" target="1.8" />
-      <module name="smart-framework" target="1.8" />
+      <module name="smart-framework" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

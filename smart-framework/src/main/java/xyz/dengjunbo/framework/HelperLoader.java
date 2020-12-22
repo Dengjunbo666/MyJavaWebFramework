@@ -1,9 +1,6 @@
 package xyz.dengjunbo.framework;
 
-import xyz.dengjunbo.framework.helper.BeanHelper;
-import xyz.dengjunbo.framework.helper.ClassHelper;
-import xyz.dengjunbo.framework.helper.ControllerHelper;
-import xyz.dengjunbo.framework.helper.IocHelper;
+import xyz.dengjunbo.framework.helper.*;
 import xyz.dengjunbo.framework.util.ClassUtil;
 
 /**
@@ -14,6 +11,7 @@ public static void init(){
     Class<?>[]classList = {
             ClassHelper.class,
             BeanHelper.class,
+            AopHelper.class,
             IocHelper.class,
             ControllerHelper.class
     };
