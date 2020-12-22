@@ -1,7 +1,14 @@
+import xyz.dengjunbo.framework.proxy.Student;
+
 public class test {
     public static void main(String[] args) {
-        String s = "1234";
-        s = "\\\\"+s;
-        System.out.println(s);
+//        BeforeProxy beforeProxy = new BeforeProxy();
+//        AfterProxy afterProxy = new AfterProxy();
+//        List<Proxy> proxyList = new ArrayList<Proxy>();
+//        proxyList.add(afterProxy);
+//        proxyList.add(beforeProxy);
+//        Student student = ProxyManager.createProxy(Student.class, proxyList);
+        Student student = new Student();
+        student.sayHello();
     }
 }
