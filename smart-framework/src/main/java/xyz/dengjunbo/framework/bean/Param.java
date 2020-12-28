@@ -1,6 +1,7 @@
 package xyz.dengjunbo.framework.bean;
 
 import xyz.dengjunbo.framework.util.CastUtil;
+import xyz.dengjunbo.framework.util.CollectionUtil;
 
 import java.util.Map;
 
@@ -24,5 +25,11 @@ private Map<String,Object>paramMap;
      */
     public Map<String,Object>getMap(){
         return paramMap;
+    }
+    /**
+     * 验证参数是否为空
+     */
+    public boolean isEmpty(){
+        return CollectionUtil.isEmpty(paramMap);
     }
 }
