@@ -30,4 +30,8 @@ public final class StringUtil {
         strings = string.split(s);
         return strings;
     }
+    /**
+     * 字符串分割符
+     */
+    public static final String SEPARATOR = String.valueOf((char)29);
 }
